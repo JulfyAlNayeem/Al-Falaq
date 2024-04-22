@@ -1,0 +1,69 @@
+textarea {
+    width: 100%;
+    height: 38px; 
+    resize: none;
+    outline: none;
+    border-radius: 15px;
+    max-height: 330px; 
+    box-sizing: border-box; 
+    margin: 0;
+}
+
+textarea:is(:focus, :valid) {
+    border-color: '';
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle on hover */
+  }
+
+  /* Accordion */
+
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  
+  /* Style the accordion section headers */
+  .accordion .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .accordion .accordion-item:last-child {
+    border-bottom: none;
+  }
+
+  .accordion .accordion-item .accordion-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  /* Style the accordion content */
+  .accordion .accordion-item .accordion-content {
+    display: none;
+    padding: 10px;
+  }
+  
